@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
     
     html, body {
         margin: 0;
-        font-family: 'Manrope', "Open Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
+        font-family: "Open Sans", 'Manrope', system-ui, Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         font-size: 20px;

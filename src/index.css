@@ -3,8 +3,10 @@
   --primary-color: #0A2640;
   --secondary-color: #65E4A3;
   --text-color: #000000;
+  --primary-font: "Open Sans";
+  --secondary-font: 'Manrope';
 
-  font-family: 'Manrope', "Open Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", 'Manrope', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 32px;
   font-weight: 400;
 
