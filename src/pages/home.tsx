@@ -1,9 +1,11 @@
-import styled from "styled-components";
+import { Jumbotron } from "../components";
 
 const Home = () => {
-  return <Container>Hello World!</Container>;
+  return (
+    <>
+      <Jumbotron />
+    </>
+  );
 };
-
-const Container = styled.p``;
 
 export default Home;
