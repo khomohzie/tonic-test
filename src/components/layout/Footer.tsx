@@ -36,7 +36,9 @@ const Footer: React.FC = () => {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/">Careers</NavLink>
+            <NavLink to="/" className="careers">
+              Careers
+            </NavLink>
             <Button>Hiring!</Button>
           </li>
           <li>
@@ -86,7 +88,6 @@ const Container = styled.footer`
 
 const UpperSection = styled.section`
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   margin-right: 170px;
 
@@ -143,6 +144,10 @@ const List = styled.ul`
     margin-top: 32px;
     margin-left: 28px;
 
+    &:first-of-type {
+      margin-top: -15px;
+    }
+
     a {
       white-space: nowrap;
       font-size: 20px;
@@ -156,11 +161,14 @@ const List = styled.ul`
     button {
       cursor: default;
       padding: 4px 14px;
-      margin-left: 10px;
 
       &:hover {
         background-color: var(--secondary-color);
       }
+    }
+
+    .careers {
+      margin-right: 10px;
     }
   }
 `;
