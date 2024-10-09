@@ -22,6 +22,7 @@ const Container = styled.section`
   padding: 40px 100px 96px;
 
   p {
+    color: var(--primary-color);
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
@@ -60,6 +61,7 @@ const Right = styled.div`
 `;
 
 const Left = styled.div`
+  color: var(--primary-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
