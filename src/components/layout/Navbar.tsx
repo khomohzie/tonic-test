@@ -3,11 +3,14 @@ import styled from "styled-components";
 import { boldoLogo } from "../../assets";
 import { NavLink } from "react-router-dom";
 import { Button } from "../../styles/common";
+import MobileNav from "./MobileNav";
 
 const Header: React.FC = () => {
   return (
     <Container>
       <img src={boldoLogo} />
+
+      <MobileNav />
 
       <LinksWrapper>
         <NavLink to="/">Product</NavLink>
@@ -29,6 +32,16 @@ const Container = styled.header`
 
   @media screen and (max-width: 900px) {
     padding: 56px 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 40px;
+  }
+
+  @media screen and (max-width: 400px) {
+    img {
+      width: 140px;
+    }
   }
 `;
 
