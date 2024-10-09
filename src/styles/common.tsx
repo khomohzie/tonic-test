@@ -6,14 +6,11 @@ type ButtonProps = {
 
 export const Button = styled.button<ButtonProps>`
   background-color: ${(props) =>
-    props.type === "secondary" ? "transparent" : "var(--primary-color)"};
+    props.type === "secondary" ? "transparent" : "var(--secondary-color)"};
   border: 2px solid
     ${(props) =>
       props.type === "secondary" ? "var(--primary-color)" : "transparent"};
-  color: ${(props) =>
-    props.type === "secondary"
-      ? "var(--primary-color)"
-      : "var(--secondary-color)"};
+  color: var(--primary-color);
   padding: 8px 40px;
   border-radius: 24px;
   cursor: pointer;
