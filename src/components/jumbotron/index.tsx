@@ -6,12 +6,12 @@ const Jumbotron: React.FC = () => {
       <p>About</p>
 
       <MainDiv>
-        <Right>We love to make great things, things that matter.</Right>
+        <Left>We love to make great things, things that matter.</Left>
 
-        <Left>
+        <Right>
           Funding handshake buyer business-to-business metrics iPad partnership.
           First mover advantage innovator success deployment non-disclosure.
-        </Left>
+        </Right>
       </MainDiv>
     </Container>
   );
@@ -47,24 +47,29 @@ const MainDiv = styled.div`
   }
 `;
 
-const Right = styled.div`
+const Left = styled.div`
   font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 48px;
   line-height: 72px;
 
   @media screen and (max-width: 768px) {
+    flex: 1;
     font-weight: 400;
     font-size: 32px;
     line-height: 48px;
   }
 `;
 
-const Left = styled.div`
+const Right = styled.div`
   color: var(--primary-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+
+  @media screen and (max-width: 768px) {
+    flex: 1;
+  }
 
   @media screen and (max-width: 400px) {
     margin-top: 20px;
