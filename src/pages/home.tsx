@@ -1,4 +1,4 @@
-import { Jumbotron, Statistics, Story, Team } from "../components";
+import { Blog, Jumbotron, Statistics, Story, Team } from "../components";
 
 const Home = () => {
   return (
@@ -7,6 +7,7 @@ const Home = () => {
       <Statistics />
       <Story />
       <Team />
+      <Blog />
     </>
   );
 };
