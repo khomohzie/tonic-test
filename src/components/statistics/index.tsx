@@ -1,6 +1,14 @@
+import { useRef } from "react";
 import styled from "styled-components";
+import { useScrollNumberAnimation } from "../../utils";
 
 const Statistics: React.FC = () => {
+  const ref = useRef<HTMLDivElement>(null);
+
+  const firstCount = useScrollNumberAnimation(ref, 120);
+  const secondCount = useScrollNumberAnimation(ref, 10000);
+  const thirdCount = useScrollNumberAnimation(ref, 240);
+
   return (
     <Container>
       <h5>Our numbers</h5>
@@ -9,19 +17,19 @@ const Statistics: React.FC = () => {
 
       <NumberSectionWrapper>
         <NumberSection>
-          <Number>120m</Number>
+          <Number ref={ref}>{firstCount}m</Number>
 
           <p>Cool feature title</p>
         </NumberSection>
 
         <NumberSection>
-          <Number>10.000</Number>
+          <Number ref={ref}>{secondCount}</Number>
 
           <p>Cool feature title</p>
         </NumberSection>
 
         <NumberSection>
-          <Number>240</Number>
+          <Number ref={ref}>{thirdCount}</Number>
 
           <p>Cool feature title</p>
         </NumberSection>
