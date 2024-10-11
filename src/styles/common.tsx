@@ -25,9 +25,9 @@ export const Button = styled.button<ButtonProps>`
   &:hover {
     background-color: ${(props) =>
       props.type === "secondary" ? "var(--primary-color)" : "transparent"};
-    color: ${(props) =>
-      props.type === "secondary"
-        ? "var(--secondary-color)"
-        : "var(--primary-color)"};
+    border: 2px solid
+      ${(props) =>
+        props.type === "secondary" ? "transparent" : "var(--secondary-color)"};
+    color: var(--secondary-color);
   }
 `;

@@ -1,4 +1,11 @@
-import { Blog, Jumbotron, Statistics, Story, Team } from "../components";
+import {
+  Blog,
+  CTAForm,
+  Jumbotron,
+  Statistics,
+  Story,
+  Team,
+} from "../components";
 
 const Home = () => {
   return (
@@ -8,6 +15,7 @@ const Home = () => {
       <Story />
       <Team />
       <Blog />
+      <CTAForm />
     </>
   );
 };
