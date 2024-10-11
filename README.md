@@ -1,4 +1,4 @@
-# ​​TTT - Frontend Developer - Design Implementation Test (https://daniel-komolafe-tonic-test.vercel.app)
+# ​​TTT - Frontend Developer - Design Implementation Test (https://daniel-komolafe-tonic-test.netlify.app)
 
 This repository contains the source code for the implementation of The Tonic Technologies frontend test.
 
