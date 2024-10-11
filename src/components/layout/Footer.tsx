@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
         </List>
       </UpperSection>
 
-      <p>All rights reserved.</p>
+      <p className="foot-note">All rights reserved.</p>
     </Container>
   );
 };
@@ -73,6 +73,10 @@ const Container = styled.footer`
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
+  }
+
+  p.foot-note {
+    white-space: nowrap;
   }
 
   @media screen and (max-width: 900px) {
@@ -164,6 +168,7 @@ const List = styled.ul`
 
       &:hover {
         background-color: var(--secondary-color);
+        color: var(--primary-color);
       }
     }
 
