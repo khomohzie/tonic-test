@@ -1,10 +1,11 @@
-import { Jumbotron, Statistics } from "../components";
+import { Jumbotron, Statistics, Story } from "../components";
 
 const Home = () => {
   return (
     <>
       <Jumbotron />
       <Statistics />
+      <Story />
     </>
   );
 };
